@@ -7,7 +7,7 @@ import glasses from './assets/glasses.jpg'
 function Hero() {
   return (
     <>
-      <div className=''>
+      <div className='font-sans'>
         <div className="hero min-h-screen bg-hero-pattern bg-cover">
           <div className="hero-content grid grid-cols-4 gap-7">
             <div className="col-start-3 row-start-1" >

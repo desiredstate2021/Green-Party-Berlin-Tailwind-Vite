@@ -10,7 +10,12 @@ module.exports = {
   theme: {
     colors: {
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        // 'hero-pattern': "url('src/components/assets/green1.svg')",
+        // 'footer-texture': "url('/img/footer-texture.png')",
+      }
+    },
   },
   daisyui: {
     themes: [

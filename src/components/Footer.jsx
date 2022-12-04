@@ -1,16 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Footer() {
 
   const footerYear = new Date().getFullYear()
   return (
     <>
-      <footer className="footer footer-center p-10 bg-primary text-base-content rounded font-sans ">
+      <footer className="footer footer-center p-10 bg-primary text-base-content rounded font-sans">
         <div className="grid grid-flow-col gap-4">
-          <a className="link link-hover">About me</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Impressum</a>
-          <a className="link link-hover">Press kit</a>
+          <Link to='/about' className="link link-hover">About me</Link>
+          <Link to='/contact' className="link link-hover">Contact</Link>
+          <Link to='/impressum' className="link link-hover">Impressum</Link>
+          <Link to='' className="link link-hover">Press kit</Link>
         </div>
         <div>
           <div className="grid grid-flow-col gap-4">

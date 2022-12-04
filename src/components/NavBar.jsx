@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
@@ -8,41 +9,36 @@ function NavBar() {
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </label>
-          <ul tabIndex={0} className="menu menu-compact dropdown-content bg-primary mt-3 p-2 shadow rounded-box w-52 text-base-100">
-            <li><a>Karakaya</a></li>
-            <li tabIndex={0}>
-              <a className="justify-between">
-                Politics
-                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-              </a>
-              <ul className="p-2">
-                <li><a>Social Justice and Diversity</a></li>
-                <li><a>Public Administration</a></li>
-              </ul>
-            </li>
-            <li><a>About Me</a></li>
+          <ul tabIndex={0} className="menu menu-compact dropdown-content bg-primary mt-3 p-2 shadow rounded-box w-32 text-base-100">
+            <li><Link to='/karakaya'>Karakaya</Link></li>
+            <li><Link to='/socialjustice'>Social Justice and Diversity</Link></li>
+            <li><Link to='/publicAdministration'>Public Administration</Link></li>
+            <li><Link to='/about'>About Me</Link></li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl text-base-100">Gülsah</a>
+        <Link to='/home' className="btn btn-ghost normal-case text-xl text-base-100">Gülsah</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0 text-base-100">
-          <li><a>Karakaya</a></li>
+          <li><Link to='karakaya'>Karakaya</Link></li>
           <li tabIndex={0}>
             <a>
               Politics
-              <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
             </a>
-            <ul className="p-2 bg-primary">
-              <li><a>Social Justice and Diversity</a></li>
-              <li><a>Public Administration</a></li>
+            <ul className="bg-primary">
+              <li><Link to='/socialjustice'>Social Justice and Diversity</Link></li>
+              <li><Link to='/publicAdministration'>Public Administration</Link></li>
             </ul>
           </li>
-          <li><a>About Me</a></li>
+          <li>
+            <Link to='about'>
+              About Me
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Contact</a>
+        <Link className="btn">Contact</Link>
       </div>
     </div>
   )

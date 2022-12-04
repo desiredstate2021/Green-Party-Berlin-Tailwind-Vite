@@ -11,11 +11,11 @@ function AboutMe() {
         Version <span className='text-white'>1.2.56</span>
       </p>
       <p className='text-lg text-gray-400'>
-        Site Built by Brian Cordisco:
-        <a className='text-white ml-1' href='https://twitter.com/briancordisco'>
-          Brian Cordisco
-        </a>
+        Site Built by Brian Cordisco
       </p>
+      <Link to='/' className="btn btn-base-100 btn-sm">
+        Back To Home
+      </Link>
     </div>
   )
 }

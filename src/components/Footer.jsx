@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -11,7 +10,6 @@ function Footer() {
           <Link to='/about' className="link link-hover">About me</Link>
           <Link to='/contact' className="link link-hover">Contact</Link>
           <Link to='/impressum' className="link link-hover">Impressum</Link>
-          <Link to='' className="link link-hover">Press kit</Link>
         </div>
         <div>
           <div className="grid grid-flow-col gap-4">

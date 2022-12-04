@@ -1,10 +1,15 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
 
 
 function Karakaya() {
   return (
-    <div>Karakaya</div>
+    <div>Karakaya
+
+      <Link to='/' className="btn btn-base-100 btn-sm">
+        Back To Home
+      </Link>
+    </div>
+
   )
 }
 

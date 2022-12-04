@@ -1,4 +1,3 @@
-import React from 'react'
 import smile from './assets/smile.jpg'
 import stoic from './assets/stoic.jpg'
 import looksmile from './assets/looksmile.jpg'

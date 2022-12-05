@@ -10,12 +10,16 @@ module.exports = {
     colors: {
     },
     screens: {
-      sm: '480px',
-      md: '768px',
+      sm: '390px',
+      md: '820px',
       lg: '976px',
       xl: '1440px',
     },
     extend: {
+      gridTemplateRows: {
+        // Simple 8 row grid
+        '12': 'repeat(12, 50px)',
+      }
     },
   },
   daisyui: {

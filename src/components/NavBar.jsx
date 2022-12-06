@@ -15,7 +15,9 @@ function NavBar() {
             <li><Link to='/about'>About Me</Link></li>
           </ul>
         </div>
-        <Link to='/' className="btn normal-case text-lg btn-base-100">Gülsah</Link>
+        <div>
+          <Link to='/' className="btn normal-case text-lg btn-base-100">Gülsah</Link>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0 text-white-100">

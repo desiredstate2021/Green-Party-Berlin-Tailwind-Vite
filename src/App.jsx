@@ -13,10 +13,10 @@ import Impressum from './components/Impressum';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col justify-between h-screen">
+      <div className="flex flex-col justify-between h-screen bg-transparent">
 
         <NavBar />
-        <main className='container mx-auto px-3 pb-12'>
+        <main className='container mx-auto pt-12 pb-12'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<AboutMe />} />
@@ -26,6 +26,7 @@ function App() {
             <Route path='/socialjustice' element={<SocialJustice />} />
             <Route path='/impressum' element={<Impressum />} />
           </Routes>
+
         </main>
         <Footer />
       </div>

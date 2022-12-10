@@ -2,33 +2,35 @@ import smile from './assets/smile500x750.png'
 import stoic from './assets/stoicsquare500x500.png'
 import looksmile from './assets/looksmile500x750.png'
 import glasses from './assets/glasses500x500.png'
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
 function Home() {
   return (
     <>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="container px-6 py-10 mx-auto">
-          <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
+
+      <div className="w-96 xs:w-80 md:w-full mx-auto rounded-lg px-4 lg:pt-5">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2">
+          <div className="self-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, type: "tween" }}
-              className="mb-6 lg:w-1/2 lg:mt-0 lg:mx-6 md:mx-auto">
-              <h1 className="xl:text-7xl lg:text-7xl md:text-6xl md:text-center font-bold sm:text-center sm:text-4xl leading-10">ZEIT FÜR GRÜN!</h1>
-              <h2 className="py-6 md:text-center text-xl">GRÜN UND
+              transition={{ duration: 0.5, type: "tween" }}
+              className="card md:mx-auto">
+              <h1 className="xl:text-7xl lg:text-5xl md:text-4xl md:text-center font-bold xs:text-center sm:text-center xs:text-3xl">Gülsah Bayar</h1>
+              <h2 className="py-6 md:text-center sm:text-center xs:text-center text-base">GRÜN UND
                 GERECHT. <br />Marie Musterkandidatin
                 für Wahlbezirk.</h2>
               <div className="flex">
-                <p className="bg-primary uppercase flex-auto rounded-lg w-64 text-center">Lichterfelde: grün und gerecht</p>
+                <p className="uppercase flex-auto rounded-lg w-64 text-center mb-5">Lichterfelde: grün und gerecht</p>
               </div>
             </motion.div>
-            {/* <Dots /> */}
+          </div>
+          <div>
             <motion.div
               className="box"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.7, type: "tween" }}
+              transition={{ duration: 1.3, type: "tween" }}
             >
               <div className="grid grid-cols-2 grid-rows-[repeat(7,auto)] gap-6">
                 <div className="col-start-1 col-end-2 row-start-1 row-end-5" >
@@ -47,9 +49,7 @@ function Home() {
             </motion.div>
           </div>
         </div>
-      </section>
-
-
+      </div>
     </>
   )
 }

@@ -5,7 +5,7 @@ import { useState } from "react";
 function Contact() {
   const [show, setShow] = useState(false);
   return (
-    <div className="bg-gradient-to-b from-purple-600 to-indigo-700 h-96 w-full">
+    <div className="h-96 w-full">
 
 
       <div className="w-full flex items-center justify-center">

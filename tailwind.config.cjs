@@ -10,12 +10,24 @@ module.exports = {
     colors: {
     },
     screens: {
-      sm: '385px',
-      md: '820px',
-      lg: '976px',
-      xl: '1440px',
+      xs: '320px',
+      sm: '400px',
+      md: '620px',
+      lg: '820px',
+      xl: '1020px',
+      xxl: '1220px',
+      // 'sx': { 'min': '640px', 'max': '767px' },
+      // 'sm': { 'min': '320px', 'max': '480px' },
+      // 'md': { 'min': '480px', 'max': '768px' },
+      // 'lg': { 'min': '768px', 'max': '1024px' },
+      // 'xl': { 'min': '1024px', 'max': '1200px' },
+      // '2xl': { 'min': '1200px' },
     },
     extend: {
+      backgroundImage: {
+        'berlin': "url('/components/assets/berlin.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
       gridTemplateRows: {
         // Simple 8 row grid
         '12': 'repeat(12, 50px)',
@@ -26,11 +38,11 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          "primary": "#00A358",
+          "primary": "#000000",
           "secondary": "#b7e060",
           "accent": "#8fef8d",
           "neutral": "#064e3b",
-          "base-100": "#1f2937",
+          "base-100": "#000000",
           "info": "#5EBEE4",
           "success": "#1AA24C",
           "warning": "#FCAC3B",

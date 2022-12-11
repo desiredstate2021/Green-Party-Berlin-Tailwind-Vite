@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
-import { useState } from "react";
+
 
 
 function Contact() {
-  const [show, setShow] = useState(false);
+
   return (
     <div className="h-96 w-full">
 
 
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full h-96 flex items-center justify-center">
         <div className="">
           <div className="md:flex items-center">
             <div className="md:w-72 flex flex-col">

@@ -1,1 +1,2 @@
-# Green-Party-Berlin![green-site](https://user-images.githubusercontent.com/80214475/205150799-4d1d9e99-7797-4290-b36e-affba3dd295a.png)
+
+![Screenshot 2022-12-11 at 15-57-48 Gülsah Bayar](https://user-images.githubusercontent.com/80214475/206911073-0c3a02d9-4483-40a3-911b-752cdcd1e9fc.png)
